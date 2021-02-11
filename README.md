@@ -78,44 +78,46 @@ permettant de "bruteforce".
 
 ### Assetfinder
 
-```
+
 Commande utilsée :
+```
 assetfinder deliveroo.com
 ```
-> [Données récupérés](./result-assetfinder.txt)
+> [Données récupérées](./result-assetfinder.txt)
 ---
 ### Shuffledns
 
-```
+
 Commande utilsée :
+```
 shuffledns -r resolvers.txt -list result-assetfinder.txt
 ```
-> [Données récupérés ](./result-shuffledns.txt)
+> [Données récupérées ](./result-shuffledns.txt)
 ---
 ### Nmap
 
-```
 Commande utilsée :
+```
 nmap -Pn -iL result-assetfinder.txt
 ```
-> [Données récupérés ](./result-nmap.txt)
+> [Données récupérées ](./result-nmap.txt)
 ---
 ### Gospider
 
-```
 Commande utilsée :
+```
 gospider -S result-shuffledns.txt
 ```
-> [Données récupérés ](./result-gospider.txt)
+> [Données récupérées ](./result-gospider.txt)
 ---
 ### Dirsearch
 
-```
-Commande utilsée :
-python3 dirsearch.py -l result-shuffledns.txt -e php --exclude-status 403,401
 
+Commande utilsée :
 ```
-> [Données récupérés ](./result-dirsearch.txt)
+python3 dirsearch.py -l result-shuffledns.txt -e php --exclude-status 403,401
+```
+> [Données récupérées ](./result-dirsearch.txt)
 ---
 
 ## Petit script
