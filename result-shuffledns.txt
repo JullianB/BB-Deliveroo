@@ -1,0 +1,9 @@
+click.b2b.deliveroo.com
+deliveroo.com.au
+cloud.b2b.deliveroo.com
+go.deliveroo.com
+deliveroo.com
+restaurants.deliveroo.com
+ad.corp.deliveroo.com
+image.b2b.deliveroo.com
+view.b2b.deliveroo.com

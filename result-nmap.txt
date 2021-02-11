@@ -1,0 +1,89 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-02-10 20:16 EST
+Nmap scan report for view.b2b.deliveroo.com (161.71.61.128)
+Host is up (0.043s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+80/tcp  open   http
+113/tcp closed ident
+443/tcp open   https
+
+Nmap scan report for cloud.b2b.deliveroo.com (161.71.80.32)
+Host is up (0.041s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+80/tcp  open   http
+113/tcp closed ident
+443/tcp open   https
+
+Nmap scan report for click.b2b.deliveroo.com (161.71.59.130)
+Host is up (0.039s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+80/tcp  open   http
+113/tcp closed ident
+443/tcp open   https
+
+Nmap scan report for deliveroo.com (104.17.230.70)
+Host is up (0.035s latency).
+Other addresses for deliveroo.com (not scanned): 104.17.231.70 2606:4700::6811:e746 2606:4700::6811:e646
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap scan report for go.deliveroo.com (35.174.78.146)
+Host is up (0.10s latency).
+rDNS record for 35.174.78.146: pi0-lba1-5-ue1.aws.pardot.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for image.b2b.deliveroo.com (23.215.190.25)
+Host is up (0.028s latency).
+Other addresses for image.b2b.deliveroo.com (not scanned): 23.215.190.91 2a02:26f0:8c00::5c7a:dbba 2a02:26f0:8c00::5c7a:dbc0
+rDNS record for 23.215.190.25: a23-215-190-25.deploy.static.akamaitechnologies.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for deliveroo.com (104.17.231.70)
+Host is up (0.035s latency).
+Other addresses for deliveroo.com (not scanned): 104.17.230.70 2606:4700::6811:e646 2606:4700::6811:e746
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap scan report for ad.corp.deliveroo.com (54.154.61.155)
+Host is up.
+Other addresses for ad.corp.deliveroo.com (not scanned): 34.243.169.23
+rDNS record for 54.154.61.155: ec2-54-154-61-155.eu-west-1.compute.amazonaws.com
+All 1000 scanned ports on ad.corp.deliveroo.com (54.154.61.155) are filtered
+
+Nmap scan report for deliveroo.com.au (104.18.9.105)
+Host is up (0.030s latency).
+Other addresses for deliveroo.com.au (not scanned): 104.18.8.105 2606:4700::6812:969 2606:4700::6812:869
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap scan report for restaurants.deliveroo.com (104.17.231.70)
+Host is up (0.029s latency).
+Other addresses for restaurants.deliveroo.com (not scanned): 104.17.230.70 2606:4700::6811:e746 2606:4700::6811:e646
+Not shown: 996 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+
+Nmap done: 10 IP addresses (10 hosts up) scanned in 50.28 seconds
