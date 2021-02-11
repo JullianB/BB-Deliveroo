@@ -116,7 +116,7 @@ gospider -S result-shuffledns.txt
 
 Commande utilsée :
 ```
-python3 dirsearch.py -l result-shuffledns.txt -e php --exclude-status 403,401
+python3 dirsearch.py -l result-shuffledns.txt -e php --exclude-status 403
 ```
 
 > [Données récupérées ](./result-dirsearch.txt)
