@@ -20,7 +20,7 @@ Groupe : Jullian BACLE, Clément JELEFF
 Consignes :\
 Essayez de trouver un moyen de vous connecter en tant qu'admin.
 
-> Goal :  is_valid_password = 1
+> **Goal :  is_valid_password = 1**
 
 Code présent sur la page
 
@@ -55,7 +55,7 @@ Consignes :\
 Time to recover some data
 Bypassing a password check is nice, but being able to read arbitrary data is better.
 
-> Goal: recover the admin password
+> **Goal: recover the admin password**
 
 Code présent sur la page :
 
@@ -98,7 +98,7 @@ Utilisation de la commande `UNION` permettant de mettre bout à bout le résulta
 Consignes :\
 This query should give us the any password, but the limit 0 prevent it.
 
-> Goal: recover the admin password
+> **Goal: recover the admin password**
 
 Code présent sur la page :
 
@@ -134,7 +134,7 @@ Ici le problème étant `LIMIT 0`, puisqu'il n'affichera aucune ligne. Il se tro
 Consignes :\
 Now that you are able to recover any data, try to explore the database.
 
-> Goal : recover the flag from the hidden table.
+> **Goal : recover the flag from the hidden table.**
 
 Code présent sur la page :
 
@@ -170,7 +170,7 @@ On applique les 2 dernières injections apprises. En les combinants on peut rech
 Consignes :\
 Sometimes the injection can occur in an INSERT statement.
 
-> Goal : recover the admin password.
+> **Goal : recover the admin password.**
 
 Code présent sur la page :
 
@@ -220,7 +220,7 @@ Consignes :\
 Here your input is heavily transformed before being injected into the query.
 While this make the exploitation more difficult, this shouldn’t stop you.
 
-> Goal : recover the admin password.
+> **Goal : recover the admin password.**
 
 Code présent sur la page :
 
@@ -288,7 +288,7 @@ Script non autorisé
 
 `<script></script>`Les tags scripts ne fonctionneront pas quand ils seront ajoutés via innerHTML, trouvez une autre solution pour exploiter la faille
 
-Goal:  `alert(name)`
+**Goal:  `alert(name)`**
 
 #### Code présent sur la page
 
