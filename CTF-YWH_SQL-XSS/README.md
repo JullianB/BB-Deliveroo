@@ -12,6 +12,11 @@ Groupe : Jullian BACLE, Clément JELEFF
   - [Exploration](#Exploration)
   - [Injection in INSERT](#Injection-in-insert)
 - [XSS](#XSS)
+  - [Simple XSS](#Simple_XSS)
+  - [InnerHTML](#InnerHTML)
+  - [JS_urls](#JS_urls)
+  - [HTML_parser](#HTML_parser)
+  - [Prototype_Pollution](#Prototype_Pollution)
 
 ## SQL injection
 
@@ -260,7 +265,7 @@ Enfin pour éviter le filtre empêchant d'écrire "password", il suffisait d'éc
 
 ## XSS
 
-### `Simple XSS`
+### `Simple_XSS`
 
 Le XSS est une vulnérabilité qui permet d'exécuter du code JavaScript sur une machine.
 Les attaquants volent généralement les cookies de la victime pour ensuite se faire passer pour elle.
@@ -313,11 +318,11 @@ document.getElementById("name").innerHTML = name
 ```
 
 **Explication de l'injection :**\
-La fonction `onload()` permet a l'attaquant d'exécuter une attaque string après le chargement de la fenêtre.
+La fonction `onload()` permet à l'attaquant d'exécuter une attaque string après le chargement de la fenêtre.
 
 ---
 
-### `JS urls`
+### `JS_urls`
 
 **Consigne :**
 Can you spot the XSS here ?
@@ -337,7 +342,7 @@ javascript:alert(name)
 ```
 
 **Explication de l'injection :**\
-Pour cette exercice on utilise le protocole `javascript:` pour déclencher l'exécution du code lorsque la liaison sera ouverte
+Pour cette exercice on utilise le protocole `javascript:` pour déclencher l'exécution du code lorsque la liaison sera ouverte.
 
 ---
 
@@ -368,11 +373,11 @@ Ou :
 **Explication de l'injection :**\
 Grâce à l'astuce numéro 3 on savait qu'il fallait utiliser l'attribut srcdoc.  
 Srcdoc permet de passer le document HTML comme attribut.  
-Il suffit ensuite de modifier 1 lettre du mot script en entitié HTML afin de bypass le filtre empêchant d'écrire `script`.
+Il suffit ensuite de modifier une lettre du mot script en entitié HTML afin de bypass le filtre empêchant d'écrire `script`.
 
 ---
 
-### `HTML parser`
+### `HTML_parser`
 
 **Consigne :**\
 Does this protection is enough to protect you against XSS ?
@@ -401,7 +406,7 @@ Comme l'analyse HTML passe en première, on peut utiliser la balise de fermeture
 
 ---
 
-### `Prototype Pollution`
+### `Prototype_Pollution`
 
 **Consigne :**\
 This is a classic prototype polution example, can you exploit it ?
@@ -445,4 +450,4 @@ if (config.debug){
 ```
 
 **Explication de l'injection :**\
-Afin d'ajouter du code malveillant il faut d'abord que `config.debug` soit vrai. Ici `user` et `config` sont tous deux de type `Objet`. Nous pouvons donc grâce à `__proto__` parcourir le prototype de l'objet et y injecter de nouveaux paramètres. Ainsi nous passons `config.debug` en vrai puis nous injectons la fonction `onload()` qui nous affichera l'alerte avec les données demandées.
+Afin d'ajouter du code malveillant, il faut d'abord que `config.debug` soit vrai. Ici `user` et `config` sont tous deux de type `Objet`. Nous pouvons donc grâce à `__proto__` parcourir le prototype de l'objet et y injecter de nouveaux paramètres. Ainsi nous passons `config.debug` en vrai puis nous injectons la fonction `onload()` qui nous affichera l'alerte avec les données demandées.
