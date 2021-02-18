@@ -92,7 +92,7 @@ $email = x'='x' UNION SELECT id, password FROM users'
 > FLAG{Th1s_is_th3_4dm1n_p4ssw0rd}
 
 **Explication de l'injection :**\
-L'utilisation de la commande `UNION` permettant de mettre bout à bout le résultat de plusieurs requête. Ainsi ça nous permet de faire passer un requête de demande d'id et de password sur la table users.
+L'utilisation de la commande `UNION` permettant de mettre bout à bout le résultat de plusieurs requêtes. Ainsi ça nous permet de faire passer une requête de demande d'id et de password sur la table users.
 
 ---
 
@@ -212,7 +212,7 @@ LIMIT 5;
 > FLAG{Th1s_is_th3_4dm1n_p4ssw0rd}
 
 **Explication de l'injection :**\
-Ici nous réalisons un requête imbriqué dans une commande `INSERT`, afin de récupèrer le mot de passe admin.
+Ici nous réalisons une requête imbriquée dans une commande `INSERT`, afin de récupèrer le mot de passe admin.
 
 ---
 
@@ -254,9 +254,9 @@ LIMIT 5;
 > FLAG{Th1s_is_th3_4dm1n_p4ssw0rd}
 
 **Explication de l'injection :**\
-Les 2 principales contraintes de cet exercice était le filtre qui replacé les espaces par des ".", et le filtre qui empêché d'utilisé le mot "password".\
+Les 2 principales contraintes de cet exercice était le filtre qui replacait les espaces par des ".", et le filtre qui empêchait d'utiliser le mot "password".\
 Il est possible de simuler un espace en utilisant la commande de commentaire `/**/`.\
-Enfin pour éviter le filtre empêchant d'écrire "password", il suffisait d'écrire `PASSpasswordWORD`, de cette façon le "password" du milieu sera supprimé, laissant `PASSWORD` libre d'utilisation.
+Enfin, pour éviter le filtre empêchant d'écrire "password", il suffisait d'écrire `PASSpasswordWORD`, de cette façon le "password" du milieu sera supprimé, laissant `PASSWORD` libre d'utilisation.
 
 ---
 
